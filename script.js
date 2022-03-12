@@ -28,6 +28,16 @@ items.forEach((item)=>{
     console.log(item)
 })
 
+const hasInexpensiveCost = items.some((item)=>{
+    return item.price <= 30
+})
+
+const hasFreeItems = items.some((item)=>{
+    return item.price <= 0
+})
+
 console.log(filteredItems)
 console.log(itemNames)
 console.log(foundItem)
+console.log(hasInexpensiveCost)
+console.log(hasFreeItems)
