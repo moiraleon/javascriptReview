@@ -8,4 +8,8 @@ const items = [
     { name: 'Keyboard', price: 25 } 
 ]
    
-const filteredItems = items.
+const filteredItems = items.filter((item)=>{
+    return item.price <=100
+})
+
+console.log(filteredItems)
