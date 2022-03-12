@@ -36,8 +36,13 @@ const hasFreeItems = items.some((item)=>{
     return item.price <= 0
 })
 
+const hasSamePrice = items.every((item)=>{
+    return item.price === 100
+})
+
 console.log(filteredItems)
 console.log(itemNames)
 console.log(foundItem)
 console.log(hasInexpensiveCost)
 console.log(hasFreeItems)
+console.log(hasSamePrice)
