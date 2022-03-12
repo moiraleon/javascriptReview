@@ -16,5 +16,12 @@ const itemNames = items.map((item)=>{
     return item.name
 })
 
+const foundItem = items.find((item)=>{
+    return item.name === 'Book'
+})
+
+
+
 console.log(filteredItems)
 console.log(itemNames)
+console.log(foundItem)
