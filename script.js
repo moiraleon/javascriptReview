@@ -8,6 +8,8 @@ const items = [
     { name: 'Keyboard', price: 25 } 
 ]
    
+const numArray = [1,2,3,4,5]
+
 const filteredItems = items.filter((item)=>{
     return item.price <=100
 })
@@ -44,6 +46,10 @@ const total = items.reduce((currentTotal, item)=>{
     return item.price + currentTotal
 },0)
 
+const includesFive = numArray.includes(5)
+
+const includesTen = numArray.includes(10)
+
 console.log(filteredItems)
 console.log(itemNames)
 console.log(foundItem)
@@ -51,3 +57,5 @@ console.log(hasInexpensiveCost)
 console.log(hasFreeItems)
 console.log(hasSamePrice)
 console.log(total)
+console.log(includesFive)
+console.log(includesTen)
