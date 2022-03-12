@@ -20,7 +20,13 @@ const foundItem = items.find((item)=>{
     return item.name === 'Book'
 })
 
+items.forEach((item)=>{
+    console.log(item.price)
+})
 
+items.forEach((item)=>{
+    console.log(item)
+})
 
 console.log(filteredItems)
 console.log(itemNames)
