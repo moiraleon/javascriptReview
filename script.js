@@ -12,4 +12,9 @@ const filteredItems = items.filter((item)=>{
     return item.price <=100
 })
 
+const itemNames = items.map((item)=>{
+    return item.name
+})
+
 console.log(filteredItems)
+console.log(itemNames)
