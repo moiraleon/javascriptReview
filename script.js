@@ -40,9 +40,14 @@ const hasSamePrice = items.every((item)=>{
     return item.price === 100
 })
 
+const total = items.reduce((currentTotal, item)=>{
+    return item.price + currentTotal
+},0)
+
 console.log(filteredItems)
 console.log(itemNames)
 console.log(foundItem)
 console.log(hasInexpensiveCost)
 console.log(hasFreeItems)
 console.log(hasSamePrice)
+console.log(total)
